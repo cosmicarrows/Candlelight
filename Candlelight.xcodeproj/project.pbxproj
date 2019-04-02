@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31E763D1698C5278AF231914 /* Pods_Candlelight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 975ED57BC27A3DC44E158E7A /* Pods_Candlelight.framework */; };
+		E30559147D6A8C22DAC55D2B /* Pods_CandlelightTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DE88EF800DBFF23E3B1BEC /* Pods_CandlelightTests.framework */; };
 		E9E8D6222252D88E001B887F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E8D6212252D88E001B887F /* AppDelegate.swift */; };
 		E9E8D6242252D88E001B887F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E8D6232252D88E001B887F /* ViewController.swift */; };
 		E9E8D6272252D88E001B887F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E8D6252252D88E001B887F /* Main.storyboard */; };
@@ -26,6 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C379CE7D3C62B1444715F45 /* Pods-Candlelight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Candlelight.release.xcconfig"; path = "Pods/Target Support Files/Pods-Candlelight/Pods-Candlelight.release.xcconfig"; sourceTree = "<group>"; };
+		382B6F273CCBB8C71FFFE937 /* Pods-CandlelightTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CandlelightTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CandlelightTests/Pods-CandlelightTests.release.xcconfig"; sourceTree = "<group>"; };
+		73AC19CAF4399AD24521E3F5 /* Pods-CandlelightTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CandlelightTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CandlelightTests/Pods-CandlelightTests.debug.xcconfig"; sourceTree = "<group>"; };
+		975ED57BC27A3DC44E158E7A /* Pods_Candlelight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Candlelight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D26B4331A97479EE189CD1EE /* Pods-Candlelight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Candlelight.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Candlelight/Pods-Candlelight.debug.xcconfig"; sourceTree = "<group>"; };
+		D3DE88EF800DBFF23E3B1BEC /* Pods_CandlelightTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CandlelightTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E8D61E2252D88E001B887F /* Candlelight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Candlelight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E8D6212252D88E001B887F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9E8D6232252D88E001B887F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31E763D1698C5278AF231914 /* Pods_Candlelight.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E30559147D6A8C22DAC55D2B /* Pods_CandlelightTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A52CAB31059F32F9973FEC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				975ED57BC27A3DC44E158E7A /* Pods_Candlelight.framework */,
+				D3DE88EF800DBFF23E3B1BEC /* Pods_CandlelightTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2AAE16BF4E91C44EA3DD7726 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D26B4331A97479EE189CD1EE /* Pods-Candlelight.debug.xcconfig */,
+				0C379CE7D3C62B1444715F45 /* Pods-Candlelight.release.xcconfig */,
+				73AC19CAF4399AD24521E3F5 /* Pods-CandlelightTests.debug.xcconfig */,
+				382B6F273CCBB8C71FFFE937 /* Pods-CandlelightTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E9E8D6152252D88E001B887F = {
 			isa = PBXGroup;
 			children = (
 				E9E8D6202252D88E001B887F /* Candlelight */,
 				E9E8D6352252D895001B887F /* CandlelightTests */,
 				E9E8D61F2252D88E001B887F /* Products */,
+				2AAE16BF4E91C44EA3DD7726 /* Pods */,
+				0A52CAB31059F32F9973FEC9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9E8D63B2252D895001B887F /* Build configuration list for PBXNativeTarget "Candlelight" */;
 			buildPhases = (
+				959906CDDFA578CF40E44B07 /* [CP] Check Pods Manifest.lock */,
 				E9E8D61A2252D88E001B887F /* Sources */,
 				E9E8D61B2252D88E001B887F /* Frameworks */,
 				E9E8D61C2252D88E001B887F /* Resources */,
+				C9BCF0A1A9C2727FB0AD59DF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +154,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9E8D63E2252D895001B887F /* Build configuration list for PBXNativeTarget "CandlelightTests" */;
 			buildPhases = (
+				52AB9AED4B198CEBEE04365D /* [CP] Check Pods Manifest.lock */,
 				E9E8D62E2252D895001B887F /* Sources */,
 				E9E8D62F2252D895001B887F /* Frameworks */,
 				E9E8D6302252D895001B887F /* Resources */,
@@ -191,6 +226,83 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52AB9AED4B198CEBEE04365D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CandlelightTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		959906CDDFA578CF40E44B07 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Candlelight-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9BCF0A1A9C2727FB0AD59DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Candlelight/Pods-Candlelight-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealingSplashView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Candlelight/Pods-Candlelight-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E9E8D61A2252D88E001B887F /* Sources */ = {
@@ -358,6 +470,7 @@
 		};
 		E9E8D63C2252D895001B887F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D26B4331A97479EE189CD1EE /* Pods-Candlelight.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -376,6 +489,7 @@
 		};
 		E9E8D63D2252D895001B887F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C379CE7D3C62B1444715F45 /* Pods-Candlelight.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,6 +508,7 @@
 		};
 		E9E8D63F2252D895001B887F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73AC19CAF4399AD24521E3F5 /* Pods-CandlelightTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -415,6 +530,7 @@
 		};
 		E9E8D6402252D895001B887F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 382B6F273CCBB8C71FFFE937 /* Pods-CandlelightTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
