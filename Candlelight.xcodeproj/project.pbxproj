@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		31E763D1698C5278AF231914 /* Pods_Candlelight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 975ED57BC27A3DC44E158E7A /* Pods_Candlelight.framework */; };
 		E30559147D6A8C22DAC55D2B /* Pods_CandlelightTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DE88EF800DBFF23E3B1BEC /* Pods_CandlelightTests.framework */; };
+		E9D5A25922544C570059E53C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D5A25822544C570059E53C /* GradientView.swift */; };
+		E9D5A25B225469650059E53C /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D5A25A225469650059E53C /* RoundImageView.swift */; };
+		E9D5A25D22546B110059E53C /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D5A25C22546B110059E53C /* RoundedShadowView.swift */; };
+		E9D5A25F22546E3A0059E53C /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D5A25E22546E3A0059E53C /* CircleView.swift */; };
+		E9D5A26122546F820059E53C /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D5A26022546F820059E53C /* RoundedShadowButton.swift */; };
 		E9E8D6222252D88E001B887F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E8D6212252D88E001B887F /* AppDelegate.swift */; };
 		E9E8D6242252D88E001B887F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E8D6232252D88E001B887F /* ViewController.swift */; };
 		E9E8D6272252D88E001B887F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E8D6252252D88E001B887F /* Main.storyboard */; };
@@ -34,6 +39,11 @@
 		975ED57BC27A3DC44E158E7A /* Pods_Candlelight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Candlelight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D26B4331A97479EE189CD1EE /* Pods-Candlelight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Candlelight.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Candlelight/Pods-Candlelight.debug.xcconfig"; sourceTree = "<group>"; };
 		D3DE88EF800DBFF23E3B1BEC /* Pods_CandlelightTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CandlelightTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9D5A25822544C570059E53C /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		E9D5A25A225469650059E53C /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
+		E9D5A25C22546B110059E53C /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
+		E9D5A25E22546E3A0059E53C /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		E9D5A26022546F820059E53C /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
 		E9E8D61E2252D88E001B887F /* Candlelight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Candlelight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E8D6212252D88E001B887F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9E8D6232252D88E001B887F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +96,32 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E9D5A25522544B100059E53C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E9D5A25622544B190059E53C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9D5A25822544C570059E53C /* GradientView.swift */,
+				E9D5A25A225469650059E53C /* RoundImageView.swift */,
+				E9D5A25C22546B110059E53C /* RoundedShadowView.swift */,
+				E9D5A25E22546E3A0059E53C /* CircleView.swift */,
+				E9D5A26022546F820059E53C /* RoundedShadowButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E9D5A25722544B200059E53C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		E9E8D6152252D88E001B887F = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +145,9 @@
 		E9E8D6202252D88E001B887F /* Candlelight */ = {
 			isa = PBXGroup;
 			children = (
+				E9D5A25522544B100059E53C /* Model */,
+				E9D5A25622544B190059E53C /* View */,
+				E9D5A25722544B200059E53C /* Controller */,
 				E9E8D6212252D88E001B887F /* AppDelegate.swift */,
 				E9E8D6232252D88E001B887F /* ViewController.swift */,
 				E9E8D6252252D88E001B887F /* Main.storyboard */,
@@ -309,8 +348,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9D5A26122546F820059E53C /* RoundedShadowButton.swift in Sources */,
+				E9D5A25F22546E3A0059E53C /* CircleView.swift in Sources */,
 				E9E8D6242252D88E001B887F /* ViewController.swift in Sources */,
+				E9D5A25B225469650059E53C /* RoundImageView.swift in Sources */,
+				E9D5A25D22546B110059E53C /* RoundedShadowView.swift in Sources */,
 				E9E8D6222252D88E001B887F /* AppDelegate.swift in Sources */,
+				E9D5A25922544C570059E53C /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

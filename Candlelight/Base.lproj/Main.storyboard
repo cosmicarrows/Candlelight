@@ -21,72 +21,80 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Rtx-JN-sdX">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </mapView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TpR-q2-GoE">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TpR-q2-GoE" customClass="GradientView" customModule="Candlelight" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="e9k-Qr-D9F"/>
+                                </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="top" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="DfH-Hx-bPP">
-                                <rect key="frame" x="5" y="30" width="360" height="35"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="DfH-Hx-bPP">
+                                <rect key="frame" x="5" y="45" width="360" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFI-BM-YkY">
-                                        <rect key="frame" x="0.0" y="0.0" width="39" height="35"/>
-                                        <state key="normal" image="flame"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="18" height="30"/>
+                                        <state key="normal" image="hamburgerMenuEdited"/>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jct-GG-yO2">
-                                        <rect key="frame" x="92.5" y="0.0" width="184" height="35"/>
+                                        <rect key="frame" x="85" y="0.0" width="184" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CANDLE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDj-Jr-hcT">
-                                                <rect key="frame" x="0.0" y="0.0" width="107" height="35"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="107" height="30"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="26"/>
                                                 <color key="textColor" red="0.45779131032775622" green="0.94419510543030583" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LIGHT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vsy-H7-lv5">
-                                                <rect key="frame" x="107" y="0.0" width="77" height="35"/>
+                                                <rect key="frame" x="107" y="0.0" width="77" height="30"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="26"/>
                                                 <color key="textColor" red="0.11928285459729426" green="0.546347776401233" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FIX-P6-HE6">
-                                        <rect key="frame" x="330" y="0.0" width="30" height="35"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gamergirl" translatesAutoresizingMaskIntoConstraints="NO" id="FIX-P6-HE6" customClass="RoundImageView" customModule="Candlelight" customModuleProvider="target">
+                                        <rect key="frame" x="330" y="0.0" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="VR1-GV-XEo"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="Ov0-J9-t5T"/>
+                                    <constraint firstAttribute="height" constant="30" id="Ov0-J9-t5T"/>
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78e-fU-7jz">
                                 <rect key="frame" x="16" y="596" width="343" height="51"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="28"/>
-                                <state key="normal" title="CHOOSE DRIVER">
-                                    <color key="titleColor" red="0.14783161878585815" green="0.54067999124526978" blue="0.9672895073890686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="SELECT WHIP">
+                                    <color key="titleColor" red="0.45932227373123169" green="0.94364356994628906" blue="0.98389226198196411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qYa-fH-fBt">
-                                <rect key="frame" x="16" y="73" width="343" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qYa-fH-fBt" customClass="RoundedShadowView" customModule="Candlelight" customModuleProvider="target">
+                                <rect key="frame" x="16" y="83" width="343" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Cth-d1-wew"/>
+                                </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uzb-fL-2o0">
-                                <rect key="frame" x="20" y="83" width="335" height="61"/>
+                                <rect key="frame" x="20" y="93" width="335" height="61"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hn8-cy-x5d">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="25"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="clA-98-DiG">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="clA-98-DiG" customClass="CircleView" customModule="Candlelight" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="5" width="15" height="15"/>
                                                 <color key="backgroundColor" red="0.43982605779253159" green="0.91616673298049423" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="15" id="7cR-Nj-C89"/>
                                                     <constraint firstAttribute="height" constant="15" id="mQ3-Zo-TqZ"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="1" green="0.84269114239999998" blue="0.45591710749999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="My Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Fj-Rb-vHb">
                                                 <rect key="frame" x="25" y="1.5" width="310" height="22"/>
@@ -109,15 +117,20 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zdh-OH-IGO">
                                         <rect key="frame" x="0.0" y="36" width="335" height="25"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IOf-Xn-VtW">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IOf-Xn-VtW" customClass="CircleView" customModule="Candlelight" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="5" width="15" height="15"/>
                                                 <color key="backgroundColor" red="1" green="0.84269114236136611" blue="0.45591710748633829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="15" id="V8y-2R-1am"/>
                                                     <constraint firstAttribute="height" constant="15" id="lGH-J3-tZt"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.45932227370000001" green="0.94364356989999998" blue="0.98389226200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Where would you like to go?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bS0-QT-teg">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Where to bae 😍?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bS0-QT-teg">
                                                 <rect key="frame" x="25" y="1.5" width="310" height="22"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
@@ -141,24 +154,33 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="qYa-fH-fBt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="2s5-Tq-Lek"/>
                             <constraint firstItem="78e-fU-7jz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="3hu-CH-hLv"/>
+                            <constraint firstItem="TpR-q2-GoE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="56Y-gC-PN3"/>
                             <constraint firstItem="Rtx-JN-sdX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="69q-xF-W9k"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="78e-fU-7jz" secondAttribute="trailing" constant="16" id="BgB-DA-VK0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uzb-fL-2o0" secondAttribute="trailing" constant="20" id="UeL-Ud-i38"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="78e-fU-7jz" secondAttribute="bottom" constant="20" id="VLt-f1-vOC"/>
+                            <constraint firstItem="TpR-q2-GoE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="X9P-E2-Wnq"/>
                             <constraint firstItem="78e-fU-7jz" firstAttribute="top" secondItem="ygd-S8-Hye" secondAttribute="bottom" constant="22" id="YAP-ES-gd0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ygd-S8-Hye" secondAttribute="trailing" constant="16" id="YQu-qg-8R1"/>
                             <constraint firstItem="Rtx-JN-sdX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="afs-gr-igR"/>
-                            <constraint firstItem="DfH-Hx-bPP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="30" id="c3r-RN-Fbv"/>
+                            <constraint firstItem="DfH-Hx-bPP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="45" id="c3r-RN-Fbv"/>
                             <constraint firstItem="DfH-Hx-bPP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="hj6-6A-L7t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qYa-fH-fBt" secondAttribute="trailing" constant="16" id="j2k-DZ-iQK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DfH-Hx-bPP" secondAttribute="trailing" constant="10" id="kbo-cQ-phw"/>
-                            <constraint firstItem="Rtx-JN-sdX" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="qIZ-4m-7dv"/>
+                            <constraint firstItem="TpR-q2-GoE" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="pJf-k3-pTg"/>
+                            <constraint firstItem="Rtx-JN-sdX" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="qIZ-4m-7dv"/>
                             <constraint firstItem="uzb-fL-2o0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tfF-aA-xSj"/>
+                            <constraint firstItem="qYa-fH-fBt" firstAttribute="top" secondItem="DfH-Hx-bPP" secondAttribute="bottom" constant="8" id="wt0-eO-cgC"/>
                             <constraint firstItem="Rtx-JN-sdX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yYw-K0-0zd"/>
                             <constraint firstItem="uzb-fL-2o0" firstAttribute="top" secondItem="DfH-Hx-bPP" secondAttribute="bottom" constant="18" id="zZA-ue-Wve"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="Rtx-JN-sdX" id="xHf-2E-C6K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -166,7 +188,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="flame" width="39" height="39"/>
+        <image name="gamergirl" width="236" height="314"/>
+        <image name="hamburgerMenuEdited" width="18.75" height="18.75"/>
         <image name="hearts" width="39" height="39"/>
     </resources>
 </document>
