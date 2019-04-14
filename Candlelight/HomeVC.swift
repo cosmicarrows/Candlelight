@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeVC.swift
 //  Candlelight
 //
 //  Created by Laurence Wingo on 4/1/19.
@@ -9,11 +9,13 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController, MKMapViewDelegate {
+class HomeVC: UIViewController, MKMapViewDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
     
     @IBOutlet weak var actionButton: RoundedShadowButton!
+    
+    var delegate: CenterVCDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,5 +26,8 @@ class ViewController: UIViewController, MKMapViewDelegate {
         actionButton.animateButton(shouldLoad: true, withMessage: nil)
     }
     
+    @IBAction func menuButtonPressed(_ sender: Any) {
+        delegate?.toggleLeftPanel()
+    }
 }
 
