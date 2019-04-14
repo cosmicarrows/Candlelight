@@ -20,6 +20,7 @@ class HomeVC: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate = self
+        
     }
 
     @IBAction func actionButtonWasPressed(_ sender: Any) {
