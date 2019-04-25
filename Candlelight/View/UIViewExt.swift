@@ -25,11 +25,9 @@ extension UIView {
         let curveFrame = (notification.userInfo![UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
         let targetFrame = (notification.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         let deltaY = targetFrame.origin.y - curveFrame.origin.y
-        
         UIView.animateKeyframes(withDuration: duration, delay: 0.0, options: .init(rawValue: curve), animations: {
             self.frame.origin.y += deltaY
         }, completion: nil)
-
     }
 }
 
