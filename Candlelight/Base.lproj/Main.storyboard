@@ -321,6 +321,9 @@
                                                 <constraint firstAttribute="height" constant="30" id="CzN-sV-JFB"/>
                                             </constraints>
                                             <state key="normal" image="delete40"/>
+                                            <connections>
+                                                <action selector="cancelBtnWasPressed:" destination="CvY-3u-MJ3" eventType="touchUpInside" id="sre-ra-RZe"/>
+                                            </connections>
                                         </button>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wfy-og-kvP">
                                             <rect key="frame" x="12.5" y="136.5" width="350" height="394"/>
@@ -366,12 +369,12 @@
                                                         <constraint firstAttribute="height" constant="40" id="Gbo-kX-EBD"/>
                                                     </constraints>
                                                     <segments>
-                                                        <segment title="Passenger"/>
-                                                        <segment title="Chauffeur"/>
+                                                        <segment title="Traveler"/>
+                                                        <segment title="Aide"/>
                                                     </segments>
                                                     <color key="tintColor" red="0.1192828546" green="0.54634777639999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </segmentedControl>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sK3-ho-HXZ">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sK3-ho-HXZ" customClass="RoundedCornerTextfield" customModule="Candlelight" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="254" width="350" height="60"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="60" id="iNa-SS-9DW"/>
@@ -380,7 +383,7 @@
                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="to3-Aj-gqu">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="to3-Aj-gqu" customClass="RoundedCornerTextfield" customModule="Candlelight" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="334" width="350" height="60"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="60" id="kWr-kM-7gn"/>

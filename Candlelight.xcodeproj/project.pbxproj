@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		5681A1AC60AC3A4A340123D2 /* Pods_CandlelightTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5176C50EABE226E7178443D4 /* Pods_CandlelightTests.framework */; };
 		7E69266B7E813E06BC8397D9 /* Pods_Candlelight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1522ED90C6DA99219CBDBBAA /* Pods_Candlelight.framework */; };
+		E901C9C822641858003428FA /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E901C9C722641858003428FA /* UIViewExt.swift */; };
 		E9B8F3CE2263F62A00C2F618 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8F3CD2263F62A00C2F618 /* LoginVC.swift */; };
+		E9B8F3D02264082200C2F618 /* RoundedCornerTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8F3CF2264082200C2F618 /* RoundedCornerTextfield.swift */; };
 		E9D5A25922544C570059E53C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D5A25822544C570059E53C /* GradientView.swift */; };
 		E9D5A25B225469650059E53C /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D5A25A225469650059E53C /* RoundImageView.swift */; };
 		E9D5A25D22546B110059E53C /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D5A25C22546B110059E53C /* RoundedShadowView.swift */; };
@@ -43,7 +45,9 @@
 		CBBCFF9815B69DCF9DD2373D /* Pods-CandlelightTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CandlelightTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CandlelightTests/Pods-CandlelightTests.release.xcconfig"; sourceTree = "<group>"; };
 		D537D1E886862F0667D5945C /* Pods-CandlelightTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CandlelightTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CandlelightTests/Pods-CandlelightTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E885DD7E702BCB19A260C380 /* Pods-Candlelight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Candlelight.release.xcconfig"; path = "Pods/Target Support Files/Pods-Candlelight/Pods-Candlelight.release.xcconfig"; sourceTree = "<group>"; };
+		E901C9C722641858003428FA /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		E9B8F3CD2263F62A00C2F618 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		E9B8F3CF2264082200C2F618 /* RoundedCornerTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerTextfield.swift; sourceTree = "<group>"; };
 		E9D5A25822544C570059E53C /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		E9D5A25A225469650059E53C /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
 		E9D5A25C22546B110059E53C /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 				E9D5A25C22546B110059E53C /* RoundedShadowView.swift */,
 				E9D5A25E22546E3A0059E53C /* CircleView.swift */,
 				E9D5A26022546F820059E53C /* RoundedShadowButton.swift */,
+				E9B8F3CF2264082200C2F618 /* RoundedCornerTextfield.swift */,
+				E901C9C722641858003428FA /* UIViewExt.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -368,8 +374,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E901C9C822641858003428FA /* UIViewExt.swift in Sources */,
 				E9B8F3CE2263F62A00C2F618 /* LoginVC.swift in Sources */,
 				E9D5A2682258D6D20059E53C /* CenterVCDelegate.swift in Sources */,
+				E9B8F3D02264082200C2F618 /* RoundedCornerTextfield.swift in Sources */,
 				E9D5A26122546F820059E53C /* RoundedShadowButton.swift in Sources */,
 				E9D5A2632258CC270059E53C /* LeftSidePanelVC.swift in Sources */,
 				E9D5A25F22546E3A0059E53C /* CircleView.swift in Sources */,
