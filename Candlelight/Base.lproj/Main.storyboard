@@ -72,7 +72,7 @@
                                         <rect key="frame" x="16" y="-8" width="343" height="51"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="28"/>
-                                        <state key="normal" title="SELECT WHIP">
+                                        <state key="normal" title="REQUEST AID">
                                             <color key="titleColor" red="0.45932227373123169" green="0.94364356994628906" blue="0.98389226198196411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>

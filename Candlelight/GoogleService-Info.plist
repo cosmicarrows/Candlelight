@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1058666178569-823tbb2p78h3dhb60rl7nn3tltl9r0va.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1058666178569-823tbb2p78h3dhb60rl7nn3tltl9r0va</string>
+	<key>API_KEY</key>
+	<string>AIzaSyADRrIbIX5S2Ocwo1u32VVyJTSlL-GqklQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1058666178569</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.cosmicarrows.Candlelight</string>
+	<key>PROJECT_ID</key>
+	<string>candlelight-855e4</string>
+	<key>STORAGE_BUCKET</key>
+	<string>candlelight-855e4.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1058666178569:ios:d50aeda74a1212f5</string>
+	<key>DATABASE_URL</key>
+	<string>https://candlelight-855e4.firebaseio.com</string>
+</dict>
+</plist>
